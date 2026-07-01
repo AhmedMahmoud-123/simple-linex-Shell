@@ -115,10 +115,6 @@ Built-in commands are executed directly in the shell process without forking, im
 - Shell's process group is isolated from child processes to ensure shell survival
 - Terminal control is properly managed using `tcsetpgrp()` and `tcgetpgrp()`
 
-## Language Composition
-
-- **C**: 95.9% - Core implementation
-- **Makefile**: 4.1% - Build configuration
 
 ## Limitations
 
@@ -127,23 +123,3 @@ Built-in commands are executed directly in the shell process without forking, im
 - No support for logical operators (`&&`, `||`)
 - No wildcard expansion or globbing
 - No support for quoting or escaping special characters
-
-## Future Enhancements
-
-Potential improvements for a more complete shell implementation:
-- Multiple pipe support (chaining more than two commands)
-- Advanced redirection (`>>`, `2>`, `2>&1`)
-- Logical operators (`&&`, `||`, `;`)
-- Command substitution
-- Variable expansion
-- Wildcard globbing
-- Job control (fg, bg, jobs commands)
-- Command aliases
-
-## Author
-
-Ahmed Mahmoud
-
-## License
-
-This project is provided as-is for educational purposes.
